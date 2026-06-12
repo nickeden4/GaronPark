@@ -735,23 +735,26 @@ section {
 
 @media (max-width: 620px) {
   .site-header {
+    position: absolute;
     inset: 10px;
-    gap: 12px;
-    padding: 10px;
+    grid-template-columns: 1fr;
+    width: auto;
+    gap: 0;
+    padding: 9px 10px;
+    background: rgba(13, 49, 41, 0.58);
   }
 
   .brand-lockup img {
-    width: 112px;
+    width: 96px;
   }
 
   .header-action {
-    padding: 9px 10px;
-    font-size: 0.78rem;
+    display: none;
   }
 
   .hero {
     min-height: auto;
-    padding-top: 128px;
+    padding-top: 112px;
   }
 
   .proposal-kicker {
