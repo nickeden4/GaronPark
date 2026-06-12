@@ -736,9 +736,12 @@ section {
 @media (max-width: 620px) {
   .site-header {
     position: absolute;
-    inset: 10px;
-    grid-template-columns: 1fr;
-    width: auto;
+    top: 10px;
+    right: auto;
+    bottom: auto;
+    left: 10px;
+    grid-template-columns: auto;
+    width: max-content;
     gap: 0;
     padding: 9px 10px;
     background: rgba(13, 49, 41, 0.58);
