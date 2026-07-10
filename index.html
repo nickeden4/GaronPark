@@ -361,18 +361,85 @@
         </div>
       </section>
 
-      <section class="next-steps" id="next-steps" aria-labelledby="next-title">
-        <img src="assets/Garon-Park-Logo-Header.png" alt="Garon Park Golf Complex">
-        <div>
+      <section class="next-steps selector-section" id="next-steps" aria-labelledby="next-title">
+        <div class="selector-copy">
           <span class="eyebrow">Next steps</span>
-          <h2 id="next-title">Arrange a TRC visit and fully break down the service.</h2>
+          <h2 id="next-title">Confirm what you need, then we will quote it properly.</h2>
           <p>
-            The next step is to arrange a time for The Revenue Club to visit Garon Park, meet the
-            team, understand the current agency frustrations in detail and fully break down the
-            enhanced service, CRM and rev ops support before confirming scope.
+            Select the areas where Garon Park wants TRC support. The form will prepare an email with
+            your selections so we can confirm the right service level and provide a clear quote.
           </p>
-          <a class="button primary" href="mailto:nick@therevenueclub.co.uk?subject=Garon%20Park%20growth%20proposal%20visit">Arrange the visit</a>
+          <div class="selector-note">
+            <strong>Quote basis</strong>
+            <span>Pricing starts from £999pm and increases depending on the selected scope.</span>
+          </div>
         </div>
+        <form class="service-selector" id="service-selector">
+          <fieldset>
+            <legend>Choose service areas</legend>
+            <label>
+              <input type="checkbox" name="services" value="Sales and marketing strategy built around data">
+              <span>Sales and marketing strategy built around data</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="CRM build, setup and team training">
+              <span>CRM build, setup and team training</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Revenue ownership, reporting and leadership updates">
+              <span>Revenue ownership, reporting and leadership updates</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Marketing email fulfilment">
+              <span>Marketing email fulfilment</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Member newsletter communications">
+              <span>Member newsletter communications</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Graphic design and campaign creative">
+              <span>Graphic design and campaign creative</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Organic social media content">
+              <span>Organic social media content</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Paid advertising campaign management">
+              <span>Paid advertising campaign management</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Website content updates">
+              <span>Website content updates</span>
+            </label>
+            <label>
+              <input type="checkbox" name="services" value="Green fee monitoring and revenue recommendations">
+              <span>Green fee monitoring and revenue recommendations</span>
+            </label>
+          </fieldset>
+
+          <div class="selector-fields">
+            <label>
+              <span>Your name</span>
+              <input type="text" id="selector-name" autocomplete="name" placeholder="Name">
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="selector-email" autocomplete="email" placeholder="Email">
+            </label>
+          </div>
+
+          <label class="selector-notes">
+            <span>Anything else we should quote for?</span>
+            <textarea id="selector-notes" rows="4" placeholder="Add priorities, exclusions, timing or questions."></textarea>
+          </label>
+
+          <div class="selector-actions">
+            <a class="button primary" id="selector-email-link" href="mailto:nick@therevenueclub.co.uk?subject=Garon%20Park%20service%20quote%20request">Email selections to TRC</a>
+            <p id="selector-summary">Select at least one service area to build your quote request.</p>
+          </div>
+        </form>
       </section>
     </main>
 

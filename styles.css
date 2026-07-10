@@ -696,6 +696,122 @@ section {
   margin-top: 12px;
 }
 
+.selector-section {
+  grid-template-columns: minmax(280px, 0.78fr) minmax(320px, 1.22fr);
+  align-items: start;
+  background: var(--mist);
+}
+
+.selector-copy {
+  position: sticky;
+  top: 120px;
+}
+
+.selector-note {
+  display: grid;
+  gap: 6px;
+  margin-top: 28px;
+  padding: 18px;
+  color: var(--white);
+  background: var(--forest);
+}
+
+.selector-note strong {
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.service-selector {
+  display: grid;
+  gap: 18px;
+  padding: clamp(20px, 4vw, 34px);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.service-selector fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.service-selector legend {
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+}
+
+.service-selector label {
+  min-width: 0;
+}
+
+.service-selector fieldset label {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 13px;
+  border: 1px solid rgba(13, 49, 41, 0.16);
+  background: rgba(250, 247, 239, 0.58);
+  font-weight: 760;
+}
+
+.service-selector input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: var(--forest);
+}
+
+.selector-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.selector-fields label,
+.selector-notes {
+  display: grid;
+  gap: 7px;
+  color: var(--forest);
+  font-weight: 850;
+}
+
+.selector-fields input,
+.selector-notes textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(13, 49, 41, 0.24);
+  padding: 12px;
+  color: var(--deep);
+  background: var(--cream);
+  font: inherit;
+}
+
+.selector-notes textarea {
+  resize: vertical;
+}
+
+.selector-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.selector-actions p {
+  flex: 1 1 260px;
+  margin: 12px 0 0;
+  color: rgba(23, 21, 18, 0.72);
+  font-size: 0.96rem;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -741,6 +857,10 @@ section {
     position: static;
   }
 
+  .selector-copy {
+    position: static;
+  }
+
   .image-strip,
   .proof-grid,
   .delivery-grid,
@@ -767,6 +887,11 @@ section {
   }
 
   .service-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .service-selector fieldset,
+  .selector-fields {
     grid-template-columns: 1fr;
   }
 
